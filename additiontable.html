@@ -22,14 +22,31 @@
     .sixs{
         background-color: rgb(255, 255, 0);
     }
+    .sevens{
+        background-color: brown;
+    }
+    .eights{
+        background-color: cyan;
+    }
+    .nines{
+        background-color: violet;
+    }
+    .tens{
+        background-color: rgb(68, 0, 255);
+    }
+    .elevens{
+        background-color: white;
+    }
+    .twelves{
+        background-color: olivedrab;
+    }
     td {
-    
+    font-size: medium;
     color: black;
     }
     th{
-        color: black;
+        color: white;
     }
-    
    .ones th{
         background-color: blue;
         color: black;
@@ -49,6 +66,25 @@
    .sixs th{
        background-color: rgb(139, 139, 0);
    }
+   .sevens th{
+       background-color: rgb(66, 4, 4);
+   }
+   .eights th{
+       background-color: rgb(9, 66, 66);
+   }
+   .nines th{
+       background-color: purple;
+   }
+   .tens th{
+       background-color: rgb(0, 0, 61);
+   }
+   .elevens th{
+       background-color: black;
+   }
+   .twelves th{
+       background-color: rgb(73, 73, 4);
+   }
+
 </style>
 
 <td>
@@ -309,10 +345,9 @@
                 </tr>
         </table>
          </td>
-
-    </table>
-    <table>
-        <table style="border-style: double;">
+ <tr>
+     <td>    
+        <table style="border-style: double;" class="sevens">
             <tr>
                 <th>sevens</th>
             </tr>
@@ -355,7 +390,7 @@
         </table>
         </td>
         <td>
-        <table style="border-style: double;">
+        <table style="border-style: double;" class="eights">
                 <tr>
                     <th>eights</th>
                 </tr>
@@ -396,9 +431,11 @@
                     <td>8+12=20</td>
                 </tr>
         </table>
-        <table style="border-style: double;">
+        </td>
+        <td>
+        <table style="border-style: double;" class="nines">
             <tr>
-                <th>fives</th>
+                <th>nines</th>
             </tr>
             <tr>
                 <td>9+1=10</td>
@@ -437,7 +474,9 @@
                 <td>9+12=21</td>
             </tr>
         </table>
-        <table style="border-style: double;">
+        </td>
+        <td>
+        <table style="border-style: double;" class="tens">
                 <tr>
                     <th>tens</th>
                 </tr>
@@ -477,8 +516,10 @@
                 <tr>
                     <td>10+12=22</td>
                 </tr>
-        </table> 
-        <table style="border-style: double;">
+        </table>
+        </td> 
+        <td>
+        <table style="border-style: double;" class="elevens">
             <tr>
                 <th>elevens</th>
             </tr>
@@ -519,7 +560,9 @@
                 <td>11+12=23</td>
             </tr>
         </table>
-        <table style="border-style: double;">
+        </td>
+        <td>
+        <table style="border-style: double;" class="twelves">
                 <tr>
                     <th>twelves</th>
                 </tr>
@@ -559,6 +602,9 @@
                 <tr>
                     <td>12+12=24</td>
                 </tr>
+
         </table>
+        </td>
+        </tr>
     </table>
 </html>
