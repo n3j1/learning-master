@@ -1,0 +1,56 @@
+<html>
+
+<body>
+    <form>
+        <div>
+            <input type="text" id="numDisplay" value="0" style="text-align: right;font-size:25px;" />
+            <hr />
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td><input type="button" value="1" onclick="numberClicked(1)" /></td>
+                                    <td><input type="button" value="2" onclick="numberClicked(2)" /></td>
+                                    <td><input type="button" value="3" onclick="numberClicked(3)" /></td>
+                                    <td><input type="button" value="clear" onclick="asdf()" /></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="button" value="4"></td>
+                                    <td><input type="button" value="6"></td>
+                                    <td><input type="button" value="7"></td>
+                                    <td><input type="button" value="+"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="button" value="8"></td>
+                                    <td><input type="button" value="9"></td>
+                                    <td><input type="button" value="0"></td>
+                                    <td><input type="submit" value="="></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+    </form>
+    <script>
+        function numberClicked(num) {
+            var d = document.getElementById("numDisplay");
+
+            d.value = "" + d.value + num;
+
+        }
+        function asdf() {
+            var d = document.getElementById("numDisplay");
+            d.value = "";
+
+        }
+    </script>
+</body>
++
+
+</html>
