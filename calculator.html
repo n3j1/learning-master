@@ -3,7 +3,7 @@
 <body>
     <form>
         <div>
-            <input type="text" id="numDisplay" value="0" style="text-align: right;font-size:25px;" />
+            <input type="text" id="numDisplay" value="89077" style="text-align: right;font-size:25px;" />
             <hr />
             <div>
                 <table>
@@ -11,21 +11,22 @@
                         <td>
                             <table>
                                 <tr>
-                                    <td><input type="button" value="1" onclick="numberClicked(1)" /></td>
-                                    <td><input type="button" value="2" onclick="numberClicked(2)" /></td>
-                                    <td><input type="button" value="3" onclick="numberClicked(3)" /></td>
-                                    <td><input type="button" value="clear" onclick="asdf()" /></td>
+                                    <td><input type="button" value="1" onclick="numberClicked2(this)" /></td>
+                                    <td><input type="button" value="2" onclick="numberClicked2(this)" /></td>
+                                    <td><input type="button" value="3" onclick="numberClicked2(this)" /></td>
+                                    <td><input type="button" value="clear" onclick="clearx()" /></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="button" value="4"></td>
-                                    <td><input type="button" value="6"></td>
-                                    <td><input type="button" value="7"></td>
+                                    <td><input type="button" value="4" onclick="numberClicked2 (this) "></td>
+                                    <td><input type="button" value="5" onclick="numberClicked2(this)"></td>
+                                    <td><input type="button" value="6" onclick="numberClicked2(this)"></td>
+                                    <td><input type="button" value="7" onclick="numberClicked2 (this) "></td>
                                     <td><input type="button" value="+"></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="button" value="8"></td>
-                                    <td><input type="button" value="9"></td>
-                                    <td><input type="button" value="0"></td>
+                                    <td><input type="button" value="8" onclick="numberClicked2 (this) "></td>
+                                    <td><input type="button" value="9" onclick="numberClicked2 (this) "></td>
+                                    <td><input type="button" value="0" onclick="numberClicked2 (this) "></td>
                                     <td><input type="submit" value="="></td>
                                 </tr>
                             </table>
@@ -38,19 +39,39 @@
         </div>
     </form>
     <script>
-        function numberClicked(num) {
-            var d = document.getElementById("numDisplay");
+        // function numberClicked(num) {
+        //     var d = document.getElementById("numDisplay");
+        //     d.value = "" + d.value + num;
+        // }
 
-            d.value = "" + d.value + num;
 
-        }
-        function asdf() {
+        function clearx() {
             var d = document.getElementById("numDisplay");
             d.value = "";
 
         }
+
+        function numberClicked2(h) {
+            var d = document.getElementById("numDisplay");
+            d.value = "" + d.value + h.value
+
+            if (h.value > 0) {
+                h.style = "background-color:yellow;";
+                setTimeout(function () { h.style = "" }, 200);
+            }
+            if (h.value > 3) {
+                h.style = "background-color:blue;";
+                setTimeout(function () { h.style = "" }, 200);
+            }
+            if (h.value > 6) {
+                h.style = "background-color:green;";
+                setTimeout(function () { h.style = "" }, 200);
+            }
+
+            console.log(h.style);
+        }
     </script>
 </body>
-+
+
 
 </html>
